@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Canada Blog{% endblock %}</title>
+        {% stylesheets output='css/compressed.css'
+            '@AxelMoussardBlogBundle/Resources/public/css/style.css'
+            filter='cssrewrite'
+        %}
+        <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        {% block stylesheets %}{% endblock %}
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!--[if IE 6]>
+        <script src="js/belatedPNG.js"></script>
+        <script>
+                DD_belatedPNG.fix('*');
+        </script>
+        <![endif]-->
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

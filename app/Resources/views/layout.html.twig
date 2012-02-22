@@ -1,0 +1,70 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+  <div id="wrap">
+
+    <section id="top">
+      <nav id="mainnav">
+        <h1 id="sitename" class="logotext">
+          <a href="#">CanadaBlog</a>
+        </h1>
+        <ul>
+          <li class="active"><a href="index.html"><span>Home</span></a></li>
+          <li><a href="photos.html"><span>Photos</span></a></li>
+          <li><a href="blog.html"><span>Blog</span></a></li>
+          <li><a href="form.html"><span>Forms</span></a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="page">
+      <section id="contents">
+        {% block content %}
+        {% endblock %}
+      </section>
+      <section id="sidebar">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="#nogo">Drawings</a></li>
+          <li><a href="#nogo">Illustrations</a></li>
+          <li><a href="#nogo">Digital Arts</a></li>
+          <li><a href="#nogo">Music</a></li>
+          <li><a href="#nogo">Literature</a></li>
+          <li><a href="#nogo">Web Design</a></li>
+          <li><a href="http://www.cssheaven.org">CSS Templates</a></li>
+
+        </ul>
+        <h2>Blogroll</h2>
+        <ul>
+          <li><a href="#nogo">Drawings</a></li>
+          <li><a href="#nogo">Illustrations</a></li>
+          <li><a href="#nogo">Digital Arts</a></li>
+          <li><a href="#nogo">Music</a></li>
+          <li><a href="#nogo">Literature</a></li>
+          <li><a href="#nogo">Web Design</a></li>
+          <li><a href="http://www.cssheaven.org">CSS Templates</a></li>
+
+        </ul>
+      </section>
+      <div class="clear"></div>
+
+      <div class="clear"></div>
+    </section>
+  </div>
+  <footer id="pagefooter">
+    <div id="f-content">
+      <img src="{{ asset("bundles/axelmoussardblog/images/bamboo.png") }}" width="96" height="125" alt="bamboo" id="footerimg">
+      <div id="social-links">
+        <a href="#" class="fblink">
+          Facebook</a>
+        <a href="#" class="twtlink">
+          Twitter
+        </a>
+      </div>
+      <div id="credits">
+        <p class="sitecredit"> 2010 &amp; All Rights Reserved | yourwebsite.com </p>
+        <p class="designcredit">CSSHeaven.org | <a href="http://www.html5xcss3.com" title="Download Free CSS Templates">Html5xcss3.com</a></p>
+
+      </div>
+    </div>
+  </footer>
+{% endblock %}

@@ -1,0 +1,15 @@
+# fichier automatiquement gÃnÃrÃ© par symfony
+/web/bundles/
+/web/css/
+/web/js/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+
+# framework symfony et librairie tierces parties
+/vendor/
+
+# fichiers temporaires
+*.bak
+.deps.lock
+*.swp #vim
